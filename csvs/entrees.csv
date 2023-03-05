@@ -1,0 +1,44 @@
+Entrees
+# Name,Meat,Origin,Has Starch,Has Side,List
+Steak					,Steak		,American	,TRUE		,TRUE		,Steak
+Breakfast for Dinner	,Pork		,American	,FALSE		,FALSE		,Eggs,Hashbrowns,Bacon,Green Peppers,Onion
+Meatloaf				,Beef		,American	,TRUE		,TRUE		,Crackers,Onion,Jimmy Deans,Ground Beef
+Spaghetti				,Beef		,Italian	,FALSE		,FALSE		,Thin Spaghetti Noodles,Ground Beef,Spaghetti Sauce,Parmesan
+Tacos					,Beef		,Mexican	,FALSE		,FALSE		,Taco Shells,Ground Beef,Lettuce,Tomatoes,Taco Seasoning,Rice,Tomatillos,Cilantro
+Pot Roast				,Beef		,American	,FALSE		,FALSE		,Chuck Roast,Golden Potatoes,Carrots,Celery,Onion,Beef Broth
+Potato Soup				,Pork		,American	,FALSE		,FALSE		,Jimmy Deans,Carrots,Celery,Onion,Chicken Broth,Golden Potatoes,Kale,Heavy Cream
+Frozen Lasagna			,Beef		,Italian	,FALSE		,FALSE		,Frozen Lasagna
+Chicken Parmesan		,Chicken	,Italian	,FALSE		,FALSE		,Thin Spaghetti Noodles,Chicken Breast,Spaghetti Sauce
+Cavateli				,Pork		,Italian	,FALSE		,FALSE		,Penne,Jimmy Deans,Spaghetti Sauce
+Mexican Chicken Pasta	,Chicken	,Mexican	,FALSE		,FALSE		,Penne,Taco Seasoning,Chicken Breast,Chicken Broth,Onion,Green Peppers
+Chicken Pasta           ,Chicken    ,Medi       ,FALSE      ,FALSE      ,Penne,Spinach,Chicken Breast,Chicken Broth,Lemon,White Whine,Minced Garlic
+Chicken n Rice			,Chicken	,American	,FALSE		,TRUE		,Chicken Breast,Rice,Chicken Broth
+Fried Chicken			,Chicken	,American	,TRUE		,TRUE		,Chicken Thighs,Eggs,Cream of Chicken
+Shingles				,Beef		,American	,FALSE		,TRUE		,Bread,Ground Beef,Cream of Mushroom
+Burritos				,Beef		,Mexican	,FALSE		,FALSE		,Tortillas,Ground Beef,Lettuce,Tomatoes,Taco Seasoning,Rice
+Hot Dogs				,Beef		,American	,TRUE		,TRUE		,Hot Dog Buns,Hot Dogs
+Cheese Burgers			,Beef		,American	,TRUE		,TRUE		,Burger Buns,Ground Beef
+Ravioli					,Beef		,Italian	,FALSE		,FALSE		,Ravioli,Ground Beef,Spaghetti Sauce
+Chicken Enchiladas		,Chicken	,Mexican	,FALSE		,FALSE		,Chicken Breast,Tomato Paste,Onion,Tortillas,Green Peppers,Taco Seasoning,Tomatillos,Cilantro
+Tuna Casterole			,Fish		,American	,FALSE		,FALSE		,Tuna,Mixed Vegetables,Penne,Cream of Mushroom,Lemon
+Tilapia					,Fish		,American	,TRUE		,TRUE		,Tilapia,Lemon
+Hogie Chicken Salad		,Chicken	,Italian	,FALSE		,TRUE		,Hogie Buns,Rotesserie Chicken,Eggs,Onion
+Hogie Deli Meat			,Chicken	,Italian	,FALSE		,TRUE		,Hogie Buns,Deli Meat,Provologn,American Cheese,Tomato,Onion,Pickles
+Hogie Steak				,Steak		,Italian	,FALSE		,TRUE		,Steak,Hogie Buns,American Cheese,Tomato,Onion,Pickles
+Chicken Pot Pie			,Chicken	,American	,TRUE		,TRUE		,Chicken Breast,Crescent Rolls,Mixed Vegetables,Cream of Chicken
+Grilled Paninis			,Chicken	,Italian	,TRUE		,TRUE		,Bread,American Cheese,Deli Meat,Soup
+Turkey Burgers			,Turkey		,American	,TRUE		,TRUE		,Ground Turkey,Burger Buns,
+Fried Rice				,Turkey		,Asian		,FALSE		,FALSE		,Ground Turkey,Rice,Mixed Vegetables,Soy Sauce
+Chicken Chili			,Chicken	,Mexican	,FALSE		,FALSE		,Chicken Breast,Corn,Onion,Rotel Tomatoes,Cream Cheese,Chicken Broth
+Tortalini Soup			,Pork		,Italian	,FALSE		,FALSE		,Jimmy Deans,Tortalini,Heavy Cream,Chicken Broth
+Creamy Tortalini Soup	,Vegetarian	,Italian	,FALSE		,FALSE		,Tortalini,Tomato Sauce,Diced Tomatoes,Chicken Broth,heavy Cream
+Fish Chowder			,Fish		,American	,FALSE		,FALSE		,Onion,Mushrooms,Celery,Chicken Broth,Yellow Potatoes,Cod,Clam Juice
+Shrimp Lomein			,Fish		,Asian		,FALSE		,FALSE		,Jumbo Shrimp,White Whine,Lemon,Lomein,Asian Meddley,Lemon
+Chicken Lomein			,Fish		,Asian		,FALSE		,FALSE		,Chicken Thighs,Lomein,Asian Meddley
+Mushroom Lomein			,Vegetarian	,Medi		,FALSE		,FALSE		,Mushrooms,Lomein,Spinach,Balsamic Vinegar
+Charred Shrimp Quinoa   ,Fish       ,Medi       ,FALSE      ,FALSE      ,Jumbo Shrimp,Arugula,Quinoa,Avacado
+Spinach Pitas           ,Vegetarian ,Medi       ,FALSE      ,TRUE       ,Pitas,Eggs,Spinach,Avacado,Feta,Tomato Pesto
+Quinoa Chili			,Chicken	,Medi       ,FALSE		,FALSE		,Quinoa,Corn,Onion,Rotel Tomatoes,Sweet Potatoes,Beans,Chicken Broth
+Samon Rice Bowl         ,Fish       ,Medi       ,FALSE      ,FALSE      ,Rice,Samon,Avacado,Mayo,Cucumber
+Chicken Quinoa          ,Chicken    ,Medi       ,FALSE      ,FALSE      ,Chicken Breast,Spinach,Cherry Tomatos,Quinoa,Avacado
+Southwest Shrimp Quinoa ,Fish       ,Medi       ,FALSE      ,FALSE      ,Jumbo Shrimp,Arugula,Rice,Avacado,Beans,Corn
