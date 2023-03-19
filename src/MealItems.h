@@ -61,6 +61,11 @@ struct MealItem {
 		, NeedsSide(false)
 	{	}
 
+	bool operator == (const MealItem& mi)
+	{
+		return (mi.Name == this->Name);
+	}
+
 	friend std::ostringstream& operator << (std::ostringstream& oss, const MealItem& mi)
 	{
 		oss << mi.Category << " Item: " << mi.Name;

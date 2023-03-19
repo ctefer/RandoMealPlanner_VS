@@ -52,7 +52,7 @@ bool RandoMealPlanner::planHasMeal(const std::map<std::uint16_t, MealPlan>& theP
 {
 	for (auto iter : thePlan)
 	{
-		if (iter.second.Name() == theItem.Name())
+		if (iter.second.Entree == theItem.Entree)
 			return true;
 	}
 
@@ -215,6 +215,18 @@ void RandoMealPlanner::PrintDays()
 	}
 }
 
+MealPlan RandoMealPlanner::GetMeal()
+{
+	MealPlan plan;
+	do
+	{
+		plan.Entree = rollMealItem(m_entreeItems);
+	} while (planHasMeal(m_theplan, plan));
+
+	return plan;
+	
+}
+
 
 void RandoMealPlanner::GenerateMealPlan(size_t days)
 {
@@ -222,37 +234,19 @@ void RandoMealPlanner::GenerateMealPlan(size_t days)
 	size_t ii = 0;
 	while (ii < days)
 	{
-		MealPlan plan;
-		int randomizer = 0;
-		while (randomizer < m_entreeItems.size())
+		MealPlan meal = GetMeal();
+
+		if (meal.HasSide())
 		{
-			randomizer++;
-
-			plan.Entree = rollMealItem(m_entreeItems);
-
-			if (ii < 1)
-				break;
-
-			// if the plan already contains this meal, reroll
-			if (planHasMeal(m_theplan, plan))
-				continue;
-
-			// follow rules, if entry already exists, redo the day
-			if( ! checkBackItems(ii, plan.Entree.Origin, plan.Entree.Meat) ) 
-				randomizer--;
+			meal.Side = rollMealItem(m_sideItems);
 		}
 
-		if (plan.HasSide())
+		if (meal.HasStarch())
 		{
-			plan.Side = rollMealItem(m_sideItems);
+			meal.Starch = rollMealItem(m_starchItems);
 		}
 
-		if (plan.HasStarch())
-		{
-			plan.Starch = rollMealItem(m_starchItems);
-		}
-
-		std::vector<std::string> items = plan.GetGroceries();
+		std::vector<std::string> items = meal.GetGroceries();
 
 		for (auto item : items)
 		{
@@ -262,7 +256,7 @@ void RandoMealPlanner::GenerateMealPlan(size_t days)
 			m_regularItems.push_back(mItem);
 		}
 
-		m_theplan[ii] = plan;
+		m_theplan[ii] = meal;
 		ii++;
 	}
 }

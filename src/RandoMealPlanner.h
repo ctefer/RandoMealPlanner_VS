@@ -39,6 +39,7 @@ private:
 	void addGroceryItem(std::map<std::string, MealItem>& list, MealItem item);
 	bool planHasMeal(const std::map<std::uint16_t, MealPlan>& thePlan, const MealPlan& theItem);
 	bool checkBackItems(size_t ii, const std::string& origin, const std::string& meat);
+	MealPlan GetMeal();
 
 	// consume meal plans from csv files
 	std::vector<MealItem> m_entreeItems;
