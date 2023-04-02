@@ -165,19 +165,26 @@ void RandoMealPlanner::main(int argc, char** argv)
 	std::cout << "Fin!" << std::endl;
 }
 
-bool RandoMealPlanner::checkBackItems(size_t ii, const std::string& origin, const std::string& meat)
+bool RandoMealPlanner::mealItemOk(size_t index, const MealPlan& theItem)
 {
+	bool itemPasses = true;
+	size_t backItemCount = 5; // only check last 5 items
+	std::string origin = theItem.Origin();
+	std::string meat = theItem.Meat();
 	
-	int backone = (ii > 0) ? ii - 1 : 0;
-	int backtwo = (ii > 1) ? ii - 2 : 0;
+	while(index > 0 && backItemCount > 0)
+	{
+		if((origin == m_theplan[index].Origin()) ||
+		(meat == m_theplan[index].Meat()))
+		{
+			itemPasses = false;
+			break;
+		}
+		index--;
+		backItemCount--;
+	}
 
-	// follow rules
-	return (
-		(origin == m_theplan[backone].Origin()) ||
-		(origin == m_theplan[backtwo].Origin()) ||
-		(meat == m_theplan[backone].Meat()) ||
-		(meat == m_theplan[backtwo].Meat())
-	);
+	return itemPasses;
 }
 
 void RandoMealPlanner::PrintGroceryList()
@@ -235,6 +242,10 @@ void RandoMealPlanner::GenerateMealPlan(size_t days)
 	while (ii < days)
 	{
 		MealPlan meal = GetMeal();
+		if(! mealItemOk(ii, meal))
+		{
+			continue;
+		}
 
 		if (meal.HasSide())
 		{
@@ -256,6 +267,7 @@ void RandoMealPlanner::GenerateMealPlan(size_t days)
 			m_regularItems.push_back(mItem);
 		}
 
+			
 		m_theplan[ii] = meal;
 		ii++;
 	}

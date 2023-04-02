@@ -33,12 +33,12 @@ Chicken Chili			,Chicken	,Mexican	,FALSE		,FALSE		,Chicken Breast,Corn,Onion,Rot
 Tortalini Soup			,Pork		,Italian	,FALSE		,FALSE		,Jimmy Deans,Tortalini,Heavy Cream,Chicken Broth
 Creamy Tortalini Soup	,Vegetarian	,Italian	,FALSE		,FALSE		,Tortalini,Tomato Sauce,Diced Tomatoes,Chicken Broth,heavy Cream
 Fish Chowder			,Fish		,American	,FALSE		,FALSE		,Onion,Mushrooms,Celery,Chicken Broth,Yellow Potatoes,Cod,Clam Juice
-Shrimp Lomein			,Fish		,Asian		,FALSE		,FALSE		,Jumbo Shrimp,White Whine,Lemon,Lomein,Asian Meddley,Lemon
-Chicken Lomein			,Fish		,Asian		,FALSE		,FALSE		,Chicken Thighs,Lomein,Asian Meddley
-Mushroom Lomein			,Vegetarian	,Medi		,FALSE		,FALSE		,Mushrooms,Lomein,Spinach,Balsamic Vinegar
-Charred Shrimp Quinoa   ,Fish       ,Medi       ,FALSE      ,FALSE      ,Jumbo Shrimp,Arugula,Quinoa,Avacado
+Shrimp Lomein			,Shrimp		,Asian		,FALSE		,FALSE		,Jumbo Shrimp,White Whine,Lemon,Lomein,Asian Meddley,Lemon
+Chicken Lomein			,Chicken	,Asian		,FALSE		,FALSE		,Chicken Thighs,Lomein,Asian Meddley
+Mushroom Lomein			,Vegetarian	,Asian		,FALSE		,FALSE		,Mushrooms,Lomein,Spinach,Balsamic Vinegar
+Charred Shrimp Quinoa   ,Shrimp     ,Medi       ,FALSE      ,FALSE      ,Jumbo Shrimp,Arugula,Quinoa,Avacado
 Spinach Pitas           ,Vegetarian ,Medi       ,FALSE      ,TRUE       ,Pitas,Eggs,Spinach,Avacado,Feta,Tomato Pesto
 Quinoa Chili			,Chicken	,Medi       ,FALSE		,FALSE		,Quinoa,Corn,Onion,Rotel Tomatoes,Sweet Potatoes,Beans,Chicken Broth
 Samon Rice Bowl         ,Fish       ,Medi       ,FALSE      ,FALSE      ,Rice,Samon,Avacado,Mayo,Cucumber
 Chicken Quinoa          ,Chicken    ,Medi       ,FALSE      ,FALSE      ,Chicken Breast,Spinach,Cherry Tomatos,Quinoa,Avacado
-Southwest Shrimp Quinoa ,Fish       ,Medi       ,FALSE      ,FALSE      ,Jumbo Shrimp,Arugula,Rice,Avacado,Beans,Corn
+Southwest Shrimp Quinoa ,Shrimp     ,Medi       ,FALSE      ,FALSE      ,Jumbo Shrimp,Arugula,Rice,Avacado,Beans,Corn
